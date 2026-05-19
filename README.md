@@ -6,6 +6,8 @@
 
 Smart Research is a Codex skill for people who do not want AI research to end as a smooth but unverifiable summary.
 
+It is not a consulting memo generator by default. It is a fact-finding engine. It should show the URL, the source location, the original wording or table value, and the confidence behind important claims before it offers interpretation.
+
 It pushes the agent to work like a research desk:
 
 - discover broadly across public sources
@@ -42,11 +44,15 @@ It is designed for messy, high-uncertainty research:
 
 Smart Research does not rush to a confident conclusion. It first builds a source map and evidence trail.
 
+No naked claims: factual bullets should be backed by source rows, URLs, page/section references, excerpts, table values, or document locations.
+
 ### 2. Flexible output, strict sourcing
 
 Ask for a table, bullets, memo, article outline, executive brief, or investment-style note. The format is flexible.
 
 The evidence rule is not flexible: important claims need sources, and source notes should include URL plus page, section, slide, table, date, figure, or filing item when available.
+
+Insights, recommendations, and strategic takeaways are optional add-ons. They appear only when the user asks for them.
 
 ### 3. Automatic expert lenses
 
@@ -123,7 +129,7 @@ Smart Research can adapt to the format you request. When no format is specified,
 
 - research scope and working assumptions
 - source map
-- key findings with source-backed evidence
+- key findings with source-backed evidence only
 - source evidence table
 - original excerpts or table values
 - deep document notes
@@ -135,7 +141,7 @@ Smart Research can adapt to the format you request. When no format is specified,
 Core evidence table:
 
 ```text
-Claim | Type | Source | Date | Original Excerpt / Table Value | What It Supports | Caveats | Confidence
+ID | Claim | Type | Source URL | Source Location | Date | Original Excerpt / Table Value | What It Supports | Caveats | Confidence
 ```
 
 ## Installation

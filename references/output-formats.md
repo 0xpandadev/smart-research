@@ -4,11 +4,17 @@ Default to evidence-first research outputs. Do not force consulting-style recomm
 
 The user may ask for a table, bullets, memo, article outline, brief, or another format. Follow the requested shape. The invariant is that important claims carry inspectable source notes.
 
+## Default Output Rule
+
+Default to an evidence pack, not an essay.
+
+Do not start with a broad unsourced overview. Start with the research scope and source map, then present evidence. If a concise summary is useful, make every bullet source-backed.
+
 ## Research Brief
 
 - Research scope and working assumptions
 - Source map
-- Key findings with source-backed evidence
+- Key findings with source-backed evidence only
 - Original excerpts for important claims
 - Contradictions and unresolved questions
 - What was not found
@@ -16,9 +22,9 @@ The user may ask for a table, bullets, memo, article outline, brief, or another 
 
 ## Source Evidence Table
 
-Use when transparency matters:
+Use for almost all non-trivial research:
 
-`Claim | Type | Source | Date | Original Excerpt / Table Value | What It Supports | Caveats | Confidence`
+`ID | Claim | Type | Source URL | Source Location | Date | Original Excerpt / Table Value | What It Supports | Caveats | Confidence`
 
 Add page, section, slide, table, figure, filing item, or document title when available. If unavailable, mark it as `not available` rather than guessing.
 
@@ -66,7 +72,7 @@ Types:
 
 ## Optional Analysis Add-On
 
-Use only when requested:
+Use only when explicitly requested:
 
 - Market map
 - Competitive landscape
@@ -74,3 +80,6 @@ Use only when requested:
 - Investment memo
 - Executive brief
 - Recommendation
+- Insight / implication / strategic takeaway
+
+If the user did not ask for these, omit them and stop at evidence, contradictions, open questions, and suggested next searches.

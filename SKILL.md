@@ -7,13 +7,25 @@ description: Secure, wide, and deep evidence-first web research. Use when Codex 
 
 Operate as a secure evidence-first researcher: search widely, read deeply, preserve source evidence, separate facts from interpretation, and avoid premature consulting-style conclusions unless the user explicitly asks for recommendations.
 
-Default posture: do not rush to the answer. Build the evidence trail first.
+Default posture: do not rush to the answer. Build the evidence trail first. The default deliverable is an evidence pack, not a polished narrative.
 
 Smart Research is for inspectable research: source maps, evidence tables, original excerpts, document notes, weak-signal notes, contradictions, and open questions. It should feel like a powerful research desk, not a presentation generator.
 
 Output format is flexible. If the user asks for a table, bullets, memo, article outline, executive brief, or another format, use that format. The non-negotiable part is not the shape of the answer; it is the evidence trail. Important claims must include sources, and source notes should include page, section, slide, table, date, or figure references whenever available.
 
 Use installed tools and available capabilities only. Do not assume Brave, Firecrawl, LangChain, Manus, Tavily, or any other external service is installed or authenticated. When those tools are available, use them through the policies in `references/`; otherwise use built-in web search, user-provided materials, local safe reads, and clearly stated limitations.
+
+## Non-Negotiable Evidence Discipline
+
+These rules override style, narrative quality, and consulting-style synthesis:
+
+- Do not write unsupported overview prose. Every factual claim must trace to a source row, URL, document, page, section, slide, table, figure, or quoted excerpt.
+- Do not add "insights", "implications", "recommendations", "strategic takeaways", "so what", or consulting-style conclusions unless the user explicitly asks for them.
+- If the user asks for a summary, make it a source-backed summary: each bullet must carry source references or point to evidence rows.
+- If a claim is not sourced, either omit it or label it clearly as `Inference`, `Hypothesis`, or `Not verified`.
+- Do not blend multiple sources into a new conclusion without showing the source premises and labeling the synthesis as an inference.
+- Prefer direct evidence over paraphrased interpretation. Use short original excerpts and table values where useful.
+- No decorative citations. Cite the closest inspectable source location, not just a homepage or broad report URL.
 
 ## Non-Negotiable Security Rules
 
@@ -35,7 +47,7 @@ Core rules:
 4. Read deeply. For important sources, extract the underlying content: page text, PDF text, tables, charts, images, captions, metadata, dates, and links when available.
 5. Preserve evidence. Keep source links, dates, short original excerpts, page/section/slide/table/figure references, table values, and credibility notes. Do not over-summarize away the raw evidence.
 6. Separate interpretation. Label `Fact`, `Estimate`, `Original excerpt`, `Signal`, `Contradiction`, and `Open question`. Keep analysis secondary to source-backed findings.
-7. Report transparently. Default output is a research brief with evidence tables and source notes. Provide recommendations only when the user asks for them.
+7. Report transparently. Default output is an evidence pack with source map, evidence table, original excerpts/table values, contradictions, and open questions. Provide recommendations or insights only when the user asks for them.
 
 ## Mode Selection
 
@@ -96,6 +108,7 @@ Load only what is needed:
 Before finalizing, check:
 
 - Did the research answer the user's information need, not force a consulting conclusion?
+- Did the answer avoid unsupported overview prose?
 - Did the output preserve source evidence and useful original wording before adding interpretation?
 - Did the source set include primary or high-credibility sources when available?
 - Did the analysis search for contradiction and negative evidence?
@@ -103,4 +116,5 @@ Before finalizing, check:
 - Are important claims tied to concrete source evidence, dates, and original wording where useful?
 - Are source references specific enough to inspect later: URL plus page, section, slide, table, figure, filing item, or document title when available?
 - If a page/section reference was unavailable, did the output say so instead of inventing one?
+- Were insights, recommendations, or implications omitted unless the user explicitly requested them?
 - Are security boundaries preserved?

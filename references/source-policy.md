@@ -47,3 +47,21 @@ Do not quote long copyrighted passages. Use short excerpts and paraphrase the re
 Do not make important factual claims without a source. Prefer primary or near-primary sources for core facts. If only secondary or weak-signal sources are available, label the confidence accordingly.
 
 If page, slide, section, or table references are unavailable, say so plainly instead of inventing a location. Useful citations are inspectable, not decorative.
+
+## No Naked Claims
+
+A naked claim is a factual sentence or bullet that has no inspectable source attached. Do not include naked claims in the final answer.
+
+Acceptable support:
+
+- URL plus exact page, section, slide, table, figure, filing item, or document title
+- short original excerpt from the source
+- table value with unit and period
+- visual evidence description with chart/figure location
+- source row ID from the evidence table
+
+If the source only supports part of the claim, narrow the claim. If no source supports it, move it to `Open question`, `Hypothesis`, or omit it.
+
+## Inference Labeling
+
+When connecting multiple facts into a broader statement, label the statement as `Inference` and show the source premises. Do not present synthesis as a fact.
