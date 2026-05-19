@@ -27,6 +27,8 @@ For each important source, assess:
 - What incentive might bias it?
 - Is it primary, secondary, or commentary?
 - What date and geography does it cover?
+- Are the source date, publication date, event date, and effective date clearly separated?
+- If the source states a weekday, does it match the actual calendar date?
 - Does another independent source support it?
 - What would disprove it?
 
@@ -39,6 +41,7 @@ For important claims, preserve enough original evidence for the user to inspect:
 - Page, section, slide, table, figure, filing item, or document title when available
 - Chart or image description when visual evidence matters
 - Source date and publisher
+- Date check notes when dates, weekdays, business days, or market days matter
 
 Do not quote long copyrighted passages. Use short excerpts and paraphrase the rest.
 

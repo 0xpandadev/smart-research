@@ -26,6 +26,7 @@ These rules override style, narrative quality, and consulting-style synthesis:
 - Do not blend multiple sources into a new conclusion without showing the source premises and labeling the synthesis as an inference.
 - Prefer direct evidence over paraphrased interpretation. Use short original excerpts and table values where useful.
 - No decorative citations. Cite the closest inspectable source location, not just a homepage or broad report URL.
+- Do not guess dates or weekdays. When dates, weekdays, business days, market days, or relative dates matter, apply `references/date-weekday-validation.md`.
 
 ## Non-Negotiable Security Rules
 
@@ -45,7 +46,7 @@ Core rules:
 2. Build a search map. Generate query families, source categories, likely primary sources, and contradiction searches before collecting evidence.
 3. Discover broadly. Use multiple discovery channels; never rely on one search provider or ranking surface. Prefer primary sources and direct source navigation for important facts.
 4. Read deeply. For important sources, extract the underlying content: page text, PDF text, tables, charts, images, captions, metadata, dates, and links when available.
-5. Preserve evidence. Keep source links, dates, short original excerpts, page/section/slide/table/figure references, table values, and credibility notes. Do not over-summarize away the raw evidence.
+5. Preserve evidence. Keep source links, dates, short original excerpts, page/section/slide/table/figure references, table values, weekday/date validation notes, and credibility notes. Do not over-summarize away the raw evidence.
 6. Separate interpretation. Label `Fact`, `Estimate`, `Original excerpt`, `Signal`, `Contradiction`, and `Open question`. Keep analysis secondary to source-backed findings.
 7. Report transparently. Default output is an evidence pack with source map, evidence table, original excerpts/table values, contradictions, and open questions. Provide recommendations or insights only when the user asks for them.
 
@@ -73,6 +74,7 @@ The user should not need to choose reference files. Infer the research domain an
 - SEO, ads, landing pages, social response, funnel, creator/content marketing: `references/web-marketing-lenses.md`
 - Medical, healthcare, clinical evidence, drug/device/safety claims: `references/medical-research-lenses.md`
 - OSINT, public signals, public records, GitHub/jobs/social traces, geopolitical or corporate behavior: `references/osint-public-signal-lenses.md`
+- Dates, weekdays, business days, market days, event timelines: `references/date-weekday-validation.md`
 - Business/product interpretation: `references/business-product-lenses.md`
 - Strategy, investment, diligence, board-level implications: `references/strategy-investment-lenses.md`
 - Technology, architecture, developer adoption, security, implementation: `references/technology-lenses.md`
@@ -86,6 +88,7 @@ Load only what is needed:
 - Security first: `references/security-guardrails.md`
 - Modes and escalation: `references/research-modes.md`
 - Source reliability: `references/source-policy.md`
+- Date and weekday accuracy: `references/date-weekday-validation.md`
 - Broad search design: `references/discovery-playbook.md`
 - Web/PDF/document reading: `references/ingestion-playbook.md`
 - Research framing and query planning: `references/hypothesis-engine.md`
@@ -116,5 +119,7 @@ Before finalizing, check:
 - Are important claims tied to concrete source evidence, dates, and original wording where useful?
 - Are source references specific enough to inspect later: URL plus page, section, slide, table, figure, filing item, or document title when available?
 - If a page/section reference was unavailable, did the output say so instead of inventing one?
+- Were all important dates normalized and weekdays independently checked when stated?
+- Were business days and market days distinguished from ordinary weekdays?
 - Were insights, recommendations, or implications omitted unless the user explicitly requested them?
 - Are security boundaries preserved?

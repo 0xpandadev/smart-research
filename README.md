@@ -13,6 +13,7 @@ It pushes the agent to work like a research desk:
 - discover broadly across public sources
 - read deeply into pages, PDFs, filings, reports, tables, charts, GitHub, forums, and weak social signals
 - preserve original evidence, dates, page/section references, caveats, and contradictions
+- verify dates, weekdays, business days, and market days instead of guessing them
 - separate facts, estimates, inferences, weak signals, risks, and open questions
 - adapt its research lens automatically to the domain
 
@@ -68,6 +69,7 @@ Smart Research infers the task and loads the right lenses:
 | SEO, ads, LPs, social response, funnels | `web-marketing-lenses.md` |
 | Medical or healthcare evidence | `medical-research-lenses.md` |
 | Public records, GitHub, jobs, social traces, OSINT | `osint-public-signal-lenses.md` |
+| Dates, weekdays, business days, market days, timelines | `date-weekday-validation.md` |
 | Business/product interpretation | `business-product-lenses.md` |
 | Strategy, investment, diligence | `strategy-investment-lenses.md` |
 | Technology, developer adoption, architecture | `technology-lenses.md` |
@@ -141,7 +143,7 @@ Smart Research can adapt to the format you request. When no format is specified,
 Core evidence table:
 
 ```text
-ID | Claim | Type | Source URL | Source Location | Date | Original Excerpt / Table Value | What It Supports | Caveats | Confidence
+ID | Claim | Type | Source URL | Source Location | Date / Weekday Check | Original Excerpt / Table Value | What It Supports | Caveats | Confidence
 ```
 
 ## Installation
@@ -179,6 +181,7 @@ smart-research/
     web-marketing-lenses.md
     medical-research-lenses.md
     osint-public-signal-lenses.md
+    date-weekday-validation.md
     business-product-lenses.md
     strategy-investment-lenses.md
     technology-lenses.md

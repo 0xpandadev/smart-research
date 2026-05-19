@@ -24,9 +24,11 @@ Do not start with a broad unsourced overview. Start with the research scope and 
 
 Use for almost all non-trivial research:
 
-`ID | Claim | Type | Source URL | Source Location | Date | Original Excerpt / Table Value | What It Supports | Caveats | Confidence`
+`ID | Claim | Type | Source URL | Source Location | Date / Weekday Check | Original Excerpt / Table Value | What It Supports | Caveats | Confidence`
 
 Add page, section, slide, table, figure, filing item, or document title when available. If unavailable, mark it as `not available` rather than guessing.
+
+When dates or weekdays matter, use ISO dates and include the checked weekday. If business-day or market-day status matters, name the relevant calendar/source or mark it `not verified`.
 
 Types:
 
