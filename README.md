@@ -14,6 +14,7 @@ It pushes the agent to work like a research desk:
 - read deeply into pages, PDFs, filings, reports, tables, charts, GitHub, forums, and weak social signals
 - preserve original evidence, dates, page/section references, caveats, and contradictions
 - separate facts, estimates, inferences, weak signals, risks, and open questions
+- tag whether each fact is `Direct Answer`, `Supporting Context`, or `Related But Not Direct Answer`
 - adapt its research lens automatically to the domain
 
 The goal is simple: **make AI research inspectable enough that you can build real decisions on top of it.**
@@ -45,6 +46,8 @@ It is designed for messy, high-uncertainty research:
 Smart Research does not rush to a confident conclusion. It first builds a source map and evidence trail.
 
 No naked claims: factual bullets should be backed by source rows, URLs, page/section references, excerpts, table values, or document locations.
+
+No answer drift: related facts are not allowed to pretend to answer the question. They are tagged as `Related But Not Direct Answer`.
 
 ### 2. Flexible output, strict sourcing
 
@@ -141,7 +144,7 @@ Smart Research can adapt to the format you request. When no format is specified,
 Core evidence table:
 
 ```text
-ID | Claim | Type | Source URL | Source Location | Date | Original Excerpt / Table Value | What It Supports | Caveats | Confidence
+ID | Claim | Answer Relevance | Type | Source URL | Source Location | Date | Original Excerpt / Table Value | What It Supports | Caveats | Confidence
 ```
 
 ## Installation

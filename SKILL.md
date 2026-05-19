@@ -1,6 +1,6 @@
 ---
 name: smart-research
-description: Secure, wide, and deep evidence-first web research. Use when Codex needs to search broadly across public sources, read complex web pages/PDFs/tables/images/social signals when available, preserve source evidence and original wording, separate facts from interpretation, and produce a transparent research brief while protecting local files, secrets, credentials, and private workspace data.
+description: Secure, wide, and deep evidence-first web research. Use when Codex needs to search broadly across public sources, read complex web pages/PDFs/tables/images/social signals when available, preserve source evidence and original wording, separate direct answers from merely related evidence, and produce a transparent research brief while protecting local files, secrets, credentials, and private workspace data.
 ---
 
 # Smart Research
@@ -26,6 +26,9 @@ These rules override style, narrative quality, and consulting-style synthesis:
 - Do not blend multiple sources into a new conclusion without showing the source premises and labeling the synthesis as an inference.
 - Prefer direct evidence over paraphrased interpretation. Use short original excerpts and table values where useful.
 - No decorative citations. Cite the closest inspectable source location, not just a homepage or broad report URL.
+- Prioritize direct answers to the user's research question. Do not substitute adjacent facts, background facts, or loosely related facts for the answer.
+- Every evidence item must carry an `Answer Relevance` label: `Direct Answer`, `Supporting Context`, `Related But Not Direct Answer`, `Contradiction`, or `Open Question`.
+- If a fact is related but does not answer the question, tag it as `Related But Not Direct Answer` and keep it out of the direct answer section.
 
 ## Non-Negotiable Security Rules
 
@@ -42,12 +45,13 @@ Core rules:
 ## Operating Flow
 
 1. Clarify the research target. Infer scope, geography, timeframe, entities, and source types. If unclear, state working assumptions and proceed.
-2. Build a search map. Generate query families, source categories, likely primary sources, and contradiction searches before collecting evidence.
-3. Discover broadly. Use multiple discovery channels; never rely on one search provider or ranking surface. Prefer primary sources and direct source navigation for important facts.
-4. Read deeply. For important sources, extract the underlying content: page text, PDF text, tables, charts, images, captions, metadata, dates, and links when available.
-5. Preserve evidence. Keep source links, dates, short original excerpts, page/section/slide/table/figure references, table values, and credibility notes. Do not over-summarize away the raw evidence.
-6. Separate interpretation. Label `Fact`, `Estimate`, `Original excerpt`, `Signal`, `Contradiction`, and `Open question`. Keep analysis secondary to source-backed findings.
-7. Report transparently. Default output is an evidence pack with source map, evidence table, original excerpts/table values, contradictions, and open questions. Provide recommendations or insights only when the user asks for them.
+2. Define the direct-answer criteria. Write what would count as a direct answer, what would count only as supporting context, and what would be merely adjacent.
+3. Build a search map. Generate query families, source categories, likely primary sources, and contradiction searches before collecting evidence.
+4. Discover broadly. Use multiple discovery channels; never rely on one search provider or ranking surface. Prefer primary sources and direct source navigation for important facts.
+5. Read deeply. For important sources, extract the underlying content: page text, PDF text, tables, charts, images, captions, metadata, dates, and links when available.
+6. Preserve evidence. Keep source links, dates, short original excerpts, page/section/slide/table/figure references, table values, and credibility notes. Do not over-summarize away the raw evidence.
+7. Separate interpretation and relevance. Label `Fact`, `Estimate`, `Original excerpt`, `Signal`, `Contradiction`, and `Open question`; also label answer relevance as `Direct Answer`, `Supporting Context`, `Related But Not Direct Answer`, `Contradiction`, or `Open Question`.
+8. Report transparently. Default output is an evidence pack with source map, evidence table, original excerpts/table values, contradictions, and open questions. Put `Direct Answer` evidence first. Provide recommendations or insights only when the user asks for them.
 
 ## Mode Selection
 
@@ -108,6 +112,8 @@ Load only what is needed:
 Before finalizing, check:
 
 - Did the research answer the user's information need, not force a consulting conclusion?
+- Did the output distinguish direct answers from merely related facts?
+- Were `Related But Not Direct Answer` facts tagged and kept out of the direct answer section?
 - Did the answer avoid unsupported overview prose?
 - Did the output preserve source evidence and useful original wording before adding interpretation?
 - Did the source set include primary or high-credibility sources when available?

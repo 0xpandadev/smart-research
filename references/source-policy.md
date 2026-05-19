@@ -66,3 +66,17 @@ If the source only supports part of the claim, narrow the claim. If no source su
 ## Inference Labeling
 
 When connecting multiple facts into a broader statement, label the statement as `Inference` and show the source premises. Do not present synthesis as a fact.
+
+## Answer Relevance Rule
+
+Every evidence item must be classified by whether it answers the user's exact question:
+
+- `Direct Answer`: the evidence directly answers the question.
+- `Supporting Context`: the evidence explains or qualifies a direct answer.
+- `Related But Not Direct Answer`: the evidence is related to the topic but does not answer the question asked.
+- `Contradiction`: the evidence conflicts with the direct answer or a source narrative.
+- `Open Question`: the evidence shows that the answer is unresolved or missing.
+
+Do not pad an answer with adjacent facts. If direct evidence is missing, say that direct evidence was not found and list adjacent evidence separately as `Related But Not Direct Answer`.
+
+If the user asks "whether X happened", answer with evidence about whether X happened, not generic background about X. If the user asks "how much", prioritize quantified evidence. If the user asks "who/when/where", prioritize exact entity/date/location evidence.

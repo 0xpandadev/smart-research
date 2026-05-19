@@ -1,3 +1,3 @@
 display_name: Smart Research
-short_description: Evidence-first wide and deep research with source trails.
-default_prompt: Research this topic with broad discovery, deep document reading, original excerpts, source evidence tables, contradiction checks, and strict security guardrails.
+short_description: Evidence-first research with source trails and direct-answer tagging.
+default_prompt: Research this topic with broad discovery, deep document reading, original excerpts, source evidence tables, direct-answer vs related-evidence labels, contradiction checks, and strict security guardrails.

@@ -10,11 +10,15 @@ Default to an evidence pack, not an essay.
 
 Do not start with a broad unsourced overview. Start with the research scope and source map, then present evidence. If a concise summary is useful, make every bullet source-backed.
 
+Start with direct-answer evidence. Put adjacent context later and tag it clearly.
+
 ## Research Brief
 
 - Research scope and working assumptions
+- Direct-answer criteria
 - Source map
 - Key findings with source-backed evidence only
+- Related but not direct answer facts, clearly tagged
 - Original excerpts for important claims
 - Contradictions and unresolved questions
 - What was not found
@@ -24,7 +28,7 @@ Do not start with a broad unsourced overview. Start with the research scope and 
 
 Use for almost all non-trivial research:
 
-`ID | Claim | Type | Source URL | Source Location | Date | Original Excerpt / Table Value | What It Supports | Caveats | Confidence`
+`ID | Claim | Answer Relevance | Type | Source URL | Source Location | Date | Original Excerpt / Table Value | What It Supports | Caveats | Confidence`
 
 Add page, section, slide, table, figure, filing item, or document title when available. If unavailable, mark it as `not available` rather than guessing.
 
@@ -38,6 +42,16 @@ Types:
 - `Signal`
 - `Contradiction`
 - `Open question`
+
+Answer Relevance labels:
+
+- `Direct Answer`: directly answers the user's research question.
+- `Supporting Context`: helps interpret a direct answer but is not the answer itself.
+- `Related But Not Direct Answer`: related fact that may be useful, but does not answer the question asked.
+- `Contradiction`: evidence that conflicts with a direct answer or official/source narrative.
+- `Open Question`: relevant question that remains unresolved.
+
+Do not use `Supporting Context` or `Related But Not Direct Answer` as a substitute for the direct answer.
 
 ## Source Map
 
